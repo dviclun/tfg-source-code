@@ -1,0 +1,30 @@
+.landingMainLogo{
+    width: 60%;
+    max-height: 300px;
+    margin-top: 6%;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+  }
+  
+
+.fit-content{
+  height: fit-content;
+}  
+
+.landingImage, .landingImageSaturated{
+  position: relative;
+  width: 100%;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.1));
+}
+
+.landingImageSaturated {
+  filter: hue-rotate(48deg) saturate(3);
+}
+
+.landingLink{
+  color: #22c55e;
+}
+
+.landingLinkPremium {
+  color: #22d3ee;
+}
+

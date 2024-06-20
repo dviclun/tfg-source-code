@@ -1,0 +1,484 @@
+
+:root {
+  --green-300: #86efac;
+  --green-400: #4ade80;
+  --green-600: #16a34a;
+  --green-900: #14532d;
+  --yellow-100: #fef9c3;
+  --grey-200: #e5e7eb;
+  --slate-100: #f1f5f9;
+  --slate-300: #cbd5e1;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --animate-delay: 0.7s;
+  --bg-white: #fafafa;
+  --orange-500: #f97316;
+  --emerald-100: #d1fae5;
+}
+
+/*--------------Global Styles--------------*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.containerPattern {
+  width: 100%;
+  background-color: #ffffff;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.171) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px;
+  height: max-content;
+  border-radius: 1em;
+  filter: drop-shadow( 0 5px 10px rgba(0, 0, 0, 0.15));
+}
+
+.greenGradient {
+  background: var(--green-900);
+  background: linear-gradient(90deg, var(--green-900) 0%, var(--green-600) 100%);
+}
+
+.bg-yellow-100 {
+  background-color: var(--yellow-100) !important;
+}
+
+.bg-slate-100 {
+  background-color: var(--slate-100);
+}
+
+.bg-white {
+  background-color: var(--bg-white);
+}
+
+.bg-slate-300{
+  background-color: var(--slate-300);
+}
+
+.ml-1 {
+  margin-left: 5px;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-slate-300 {
+  color: var(--slate-300) !important;
+}
+
+.text-slate-100 {
+  color: var(--slate-100) !important;
+}
+
+.text-grey-200 {
+  color: var(--grey-200) !important;
+}
+
+.text-black-bold{
+  color: #000000 !important;
+  font-weight: bold !important;
+}
+
+.text-yellow-100 {
+  color: var(--yellow-100);
+}
+
+.text-green-400{
+  color: var(--green-400);
+}
+
+.text-green-600{
+  color: var(--green-600);
+}
+
+
+/*--------------Specific Classes--------------*/
+.wrapper {
+  padding: 2%;
+  height: max-content;
+  display: flex;
+}
+
+.formContent {
+  border-radius: 1em 0 0 1em;
+  padding: 20px;
+}
+
+.formContentLogin {
+  min-height: calc(100vh - 20px);
+  border-radius: 0 1em 1em 0;
+  padding: 20px;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+}
+
+.logoLink{
+  width: 100%;
+}
+
+#loginImg {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url(./assets/loginImage.jpg);
+  background-size: cover;
+  background-position: 40%;
+  background-repeat: no-repeat;
+  border-radius: 1em;
+}
+
+#registerImg {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url(./assets/registerImage.jpg);
+  background-size: cover;
+  background-position: 80%;
+  background-repeat: no-repeat;
+  border-radius: 1em;
+}
+
+.loginSvg {
+  width: 100%;
+  height: 100px;
+  min-width: 100px;
+  padding-bottom: 0.5em;
+  filter: brightness(0) invert(1) drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+.langContainer {
+  margin-top: 3%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+
+.headerSvg{
+  height: 80px;
+  min-width: 150px;
+  
+}
+
+.logoLinkHeader{
+  margin-right: 2em;
+}
+
+.navLinks{
+  text-decoration: none;
+  color: var(--slate-700);
+  margin-right: 2em;
+  font-size: 11px;
+  text-align: center;
+}
+
+.navLinksMobile{
+  text-decoration: none;
+  color: var(--slate-700);
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+
+.navLinks:hover, .navLinksMobile:hover {
+  font-weight: bold;
+}
+
+.navLinks:active, .navLinksMobile:active{
+  color: #000000;
+}
+
+.authLinksMobile{
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+.authLinksMobile:hover{
+  font-weight: 500;
+}
+
+.profileBtn{
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+.header-link, .header-link-black {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.header-link-black {
+  color: #000000;
+}
+
+.profileBtn:hover {
+  color: var(--green-600);
+  transition: all ease-in 0.2s;
+}
+
+.header-username::first-letter{
+  text-transform: uppercase;
+}
+
+.header {
+  background-color: rgba(253, 253, 253, 0.4)!important;
+  backdrop-filter: blur(7px);
+}
+
+.flagIcon {
+  width: 20px;
+}
+
+.flagIcon:hover{
+  cursor: pointer;
+}
+
+.separator {
+  height: 3px;
+  width: 200px;
+  background-color: #16a34a;
+}
+
+.cardImage{
+  filter: grayscale(100%);
+}
+
+.trainingCard:hover{
+  transform: scale(103%);
+  transition: all ease-in 0.2s;
+}
+
+.cardBg{
+  background-color: #4ade809a;
+}
+
+.rankingTbody .tableRow .tableCell{
+  position: relative;
+}
+
+.rankingTbody .tableRow:nth-child(1) .tableCell::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 4px; /* Ancho del borde izquierdo */
+  background-color: var(--green-400); /* Color del borde */
+}
+
+.rankingTbody .tableRow:nth-child(2) .tableCell::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 4px; /* Ancho del borde izquierdo */
+  background-color: var(--green-600); /* Color del borde */
+}
+
+.rankingTbody .tableRow:nth-child(3) .tableCell::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 4px; /* Ancho del borde izquierdo */
+  background-color: var(--orange-500); /* Color del borde */
+}
+
+
+/*-------------Fonts---------------*/
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.errorSpan {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: left;
+  display: block;
+  font-size: 14px;
+  width: 100% !important;
+  color: rgb(247, 82, 82);
+
+}
+
+.lp-svgLogo {
+  display: flex;
+  width: fit-content;
+}
+
+.accessDeniedSvg, .peopleTrainingImage, .noVideosFoundSvg{
+  width: 300px;
+}
+
+.rankingImage {
+  width: 300px;
+  filter: hue-rotate(48deg) saturate(3);
+}
+
+.profileLink{
+  text-decoration: none;
+  color: #000000;
+}
+
+.profileLink:hover{
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.searchingSvg {
+  width: 300px;
+}
+
+.contactListCard {
+  height: calc(100vh - 150px);
+  overflow: auto;
+}
+
+.chatBoxCard {
+  height: calc(100vh - 150px);
+}
+
+.leftChatMessage {
+  background-color: var(--green-600);
+}
+
+.rightChatMessage {
+  background-color: #129AE6;
+  float: right;
+}
+
+.customScrollBar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.customScrollBar::-webkit-scrollbar-thumb {
+  background-color: var(--green-300);
+  border-radius: 10px;
+}
+
+.customScrollBar::-webkit-scrollbar-track{
+  background-color: var(--emerald-100);
+}
+
+.emptyChatBg {
+  width: 40%;
+  min-width: 250px;
+  max-width: 700px;
+  filter: opacity(.8);
+}
+
+.emptyChatName {
+  font-weight: bold;
+  color: var(--green-600);
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.personalizedTrainingImage {
+  width: 300px;
+}
+
+.personalizedCardImage {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+.notSelectedRequestImg{
+  width: 300px;
+}
+
+.premiumStar {
+  width: 80%;
+  min-width: 180px;
+  filter: hue-rotate(90deg);
+}
+
+.mt-0 {
+  margin-top: .5em;
+}
+
+/*------------------------------------------------------------MEDIA QUERIES------------------------------------------------------------*/
+
+@media (max-width: 600px) {
+  .formContent, .formContentLogin{
+    border-radius: 1em;
+  }
+}
+
+/*Mostrar elementos a partir de breakpoint md de tailwind*/
+@media (min-width: 768px) {
+
+  .registerForm {
+    width: 60%;
+  }
+
+}
+
+@media (min-width: 1000px){
+  .navLinks{
+    font-size: 13px;
+
+  }
+  
+}
+
+/*Mostrar elementos a partir del breakpoint 2xl*/
+@media (min-width: 1536px) {
+  .wrapper {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 100vh;
+  }
+  .containerPattern, .formContent, .formContentLogin {
+    min-height: 100%;
+  }
+
+  .navLinks {
+    font-size: 16px;
+  }
+}

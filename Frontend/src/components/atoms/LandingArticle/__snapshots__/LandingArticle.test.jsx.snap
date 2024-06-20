@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <LandingArticle/> Container must render and match snapshot 1`] = `
+<div>
+  <div
+    class="MuiGrid-root css-vj1n65-MuiGrid-root"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-lpp2qy-MuiGrid-root"
+    >
+      <div
+        style="will-change: transform,opacity; transform: translateY(-100px); opacity: 5;"
+      >
+        <img />
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-lpp2qy-MuiGrid-root"
+    >
+      <div
+        style="will-change: transform,opacity; transform: translateY(-100px); opacity: 5;"
+      >
+        <h4
+          class="MuiTypography-root MuiTypography-h4 css-14atv5i-MuiTypography-root"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
